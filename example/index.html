@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <title>angular-plaid-link example</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="../src/angular-plaid-link.js"></script>
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <div class="clearfix">
+            <h1 class="pull-left">Angular Plaid Link Example</h1>
+
+            <ul class="list-unstyled pull-right" style="margin-top: 10px;">
+                <li><strong>Docs:</strong></li>
+                <li><a href="https://github.com/plaid/link">Plaid Link</a></li>
+                <li><a href="https://github.com/csbarnes/angular-plaid-link">angular-plaid-link</a></li>
+            </ul>
+        </div>
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Bank Select</strong></p>
+                <button class="btn btn-success" ng-click="openPlaid()" ng-disabled="!plaidIsLoaded()">
+                    Link Account
+                </button>
+
+                <br/>
+                <br/>
+                <p><em>or</em></p>
+
+                <p><strong>Direct Bank Login</strong></p>
+
+                <button class="btn btn-primary" ng-click="openPlaid('chase')" ng-disabled="!plaidIsLoaded()">
+                    Link Chase
+                </button>
+
+                <button class="btn btn-danger" ng-click="openPlaid('bofa')" ng-disabled="!plaidIsLoaded()">
+                    Link Bank of America
+                </button>
+            </div>
+
+            <div class="col-md-6">
+                <h4>Public Token:</h4>
+                <pre>{{token}}</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.plaid.com/link/stable/link-initialize.js"></script>
+    <script src="example.js"></script>
+</body>
+</html>

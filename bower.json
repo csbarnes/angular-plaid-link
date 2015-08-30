@@ -1,0 +1,26 @@
+{
+  "name": "angular-plaid-link",
+  "version": "1.0.0",
+  "homepage": "https://github.com/csbarnes/angular-plaid-link",
+  "authors": [
+    "Chris Barnes <barnes.csb@gmail.com>"
+  ],
+  "description": "Plaid Link wrapper for AngularJS",
+  "main": "src/angular-plaid-link.js",
+  "keywords": [
+    "angular",
+    "plaid",
+    "plaid-link"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "example"
+  ],
+  "dependencies": {
+    "angular": ">=1.2"
+  }
+}

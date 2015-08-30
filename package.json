@@ -1,0 +1,24 @@
+{
+  "name": "angular-plaid-link",
+  "version": "1.0.0",
+  "description": "Plaid Link wrapper for AngularJS",
+  "main": "src/angular-plaid-link.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csbarnes/angular-plaid-link.git"
+  },
+  "keywords": [
+    "angular",
+    "plaid",
+    "plaid-link"
+  ],
+  "author": "Chris Barnes <barnes.csb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csbarnes/angular-plaid-link/issues"
+  },
+  "homepage": "https://github.com/csbarnes/angular-plaid-link"
+}
