@@ -20,8 +20,8 @@ angular.module('angular-plaid-link', [])
                                 loaded = true;
                                 _triggerCallback(onLoadCallback);
                             },
-                            onSuccess: function(token) {
-                                _triggerCallback(onSuccessCallback, token);
+                            onSuccess: function(token, metadata) {
+                                _triggerCallback(onSuccessCallback, token, metadata);
                             }
                         };
 
